@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kasir</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="LibGUI::TabWidget" name="tabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::South</enum>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionSetting"/>
+    <addaction name="actionDate_Setting"/>
+    <addaction name="separator"/>
+    <addaction name="actionImport_Export_Database"/>
+    <addaction name="action_Reset_Database"/>
+    <addaction name="separator"/>
+    <addaction name="actionLogout"/>
+   </widget>
+   <widget class="QMenu" name="menuAdministration">
+    <property name="title">
+     <string>&amp;Administration</string>
+    </property>
+    <addaction name="action_User"/>
+    <addaction name="action_Machines"/>
+    <addaction name="separator"/>
+    <addaction name="action_Change_Password"/>
+   </widget>
+   <widget class="QMenu" name="menuInventory">
+    <property name="title">
+     <string>&amp;Inventory</string>
+    </property>
+    <addaction name="action_Category"/>
+    <addaction name="action_Suplier"/>
+    <addaction name="action_Items"/>
+    <addaction name="separator"/>
+    <addaction name="action_Customer_List"/>
+    <addaction name="actionReward_Setting"/>
+    <addaction name="separator"/>
+    <addaction name="action_Banks"/>
+    <addaction name="actionUnits"/>
+   </widget>
+   <widget class="QMenu" name="menuTransaction">
+    <property name="title">
+     <string>&amp;Transaction</string>
+    </property>
+    <addaction name="action_Cashier"/>
+    <addaction name="actionSold_Return"/>
+    <addaction name="separator"/>
+    <addaction name="actionPurchase"/>
+    <addaction name="actionPurchaseReturn"/>
+    <addaction name="separator"/>
+    <addaction name="actionInitial_Stock"/>
+    <addaction name="action_Check_Stock"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionCheck_Update"/>
+    <addaction name="separator"/>
+    <addaction name="action_About"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <widget class="QMenu" name="menuReport">
+    <property name="title">
+     <string>&amp;Report</string>
+    </property>
+    <addaction name="actionSales"/>
+    <addaction name="actionItems"/>
+    <addaction name="separator"/>
+    <addaction name="action_Transaction"/>
+    <addaction name="action_MOney"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAdministration"/>
+   <addaction name="menuInventory"/>
+   <addaction name="menuTransaction"/>
+   <addaction name="menuReport"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSetting">
+   <property name="text">
+    <string>&amp;Setting</string>
+   </property>
+  </action>
+  <action name="actionLogout">
+   <property name="text">
+    <string>&amp;Logout</string>
+   </property>
+  </action>
+  <action name="action_User">
+   <property name="text">
+    <string>&amp;User</string>
+   </property>
+  </action>
+  <action name="action_Suplier">
+   <property name="text">
+    <string>&amp;Suplier</string>
+   </property>
+  </action>
+  <action name="action_Items">
+   <property name="text">
+    <string>&amp;Items</string>
+   </property>
+  </action>
+  <action name="action_Cashier">
+   <property name="text">
+    <string>&amp;Cashier</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About &amp;Qt</string>
+   </property>
+  </action>
+  <action name="action_Category">
+   <property name="text">
+    <string>&amp;Category</string>
+   </property>
+  </action>
+  <action name="actionSales">
+   <property name="text">
+    <string>&amp;Sales</string>
+   </property>
+  </action>
+  <action name="actionItems">
+   <property name="text">
+    <string>&amp;Items</string>
+   </property>
+  </action>
+  <action name="action_Change_Password">
+   <property name="text">
+    <string>&amp;Change Password</string>
+   </property>
+  </action>
+  <action name="actionC_ustomer">
+   <property name="text">
+    <string>C&amp;ustomer</string>
+   </property>
+  </action>
+  <action name="action_Machines">
+   <property name="text">
+    <string>&amp;Machines</string>
+   </property>
+  </action>
+  <action name="action_Reward">
+   <property name="text">
+    <string>&amp;Reward</string>
+   </property>
+  </action>
+  <action name="action_Customer_List">
+   <property name="text">
+    <string>&amp;Customer List</string>
+   </property>
+  </action>
+  <action name="actionReward_Setting">
+   <property name="text">
+    <string>&amp;Reward Setting</string>
+   </property>
+  </action>
+  <action name="action_Banks">
+   <property name="text">
+    <string>&amp;Banks</string>
+   </property>
+  </action>
+  <action name="action_Transaction">
+   <property name="text">
+    <string>&amp;Transaction</string>
+   </property>
+  </action>
+  <action name="action_MOney">
+   <property name="text">
+    <string>&amp;Money</string>
+   </property>
+  </action>
+  <action name="actionCheck_Update">
+   <property name="text">
+    <string>&amp;Check Update</string>
+   </property>
+  </action>
+  <action name="actionPurchase">
+   <property name="text">
+    <string>&amp;Purchase</string>
+   </property>
+  </action>
+  <action name="actionPurchaseReturn">
+   <property name="text">
+    <string>Purchase &amp;Return</string>
+   </property>
+  </action>
+  <action name="actionImport_Export_Database">
+   <property name="text">
+    <string>&amp;Import / Export Database</string>
+   </property>
+  </action>
+  <action name="action_Check_Stock">
+   <property name="text">
+    <string>Check &amp;Stock</string>
+   </property>
+  </action>
+  <action name="actionInitial_Stock">
+   <property name="text">
+    <string>&amp;Initial Stock</string>
+   </property>
+  </action>
+  <action name="actionUnits">
+   <property name="text">
+    <string>&amp;Units</string>
+   </property>
+  </action>
+  <action name="actionDate_Setting">
+   <property name="text">
+    <string>&amp;Date Setting</string>
+   </property>
+  </action>
+  <action name="action_Reset_Database">
+   <property name="text">
+    <string>&amp;Reset Database</string>
+   </property>
+  </action>
+  <action name="action_Stock_Card">
+   <property name="text">
+    <string>Stock &amp;Card</string>
+   </property>
+  </action>
+  <action name="actionSold_Return">
+   <property name="text">
+    <string>&amp;Sold Return</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LibGUI::TabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>tabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
